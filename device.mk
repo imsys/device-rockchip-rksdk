@@ -74,7 +74,7 @@ PRODUCT_PACKAGES += AllApp
 #########################################################
 # Copy proprietary apk
 #########################################################
-include device/rockchip/common/app/rkapk.mk
+#include device/rockchip/common/app/rkapk.mk
 
 ########################################################
 # Google applications
