@@ -28,8 +28,8 @@ def main(argv):
         if os.path.exists(include_path):
             os.remove(include_path)
 
-        makefile = file(makefile_path, 'w')
-        includefile = file(include_path, 'w')
+        makefile = open(makefile_path, 'w')
+        includefile = open(include_path, 'w')
 
         makefile.write("LOCAL_PATH := $(my-dir)\n\n")
         for root, dirs, files in os.walk(preinstall_dir):
